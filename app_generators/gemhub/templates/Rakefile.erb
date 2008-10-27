@@ -23,6 +23,8 @@ spec = Gem::Specification.new do |s|
   s.author = AUTHOR
   s.email = EMAIL
   s.homepage = HOMEPAGE
+
+  s.rubyforge_project = GEM # GitHub bug, gem isn't being build when this miss
 end
 
 Spec::Rake::SpecTask.new do |t|
