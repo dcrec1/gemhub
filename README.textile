@@ -1,3 +1,7 @@
+h2. INSTALLATION
+
+@sudo gem install dcrec1-gemhub -s http://gems.github.com@
+
 h2. LICENSE:
 
 (The MIT License)
