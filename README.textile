@@ -2,6 +2,18 @@ h2. INSTALLATION
 
 @sudo gem install dcrec1-gemhub -s http://gems.github.com@
 
+h2. USAGE
+
+Create your gem's project structure with:
+
+@gemhub <gem-name>@
+
+Then create your files, edit Rakefile and finally execute:
+
+@rake make_spec@
+
+to create the gemspec file.
+
 h2. LICENSE:
 
 (The MIT License)
