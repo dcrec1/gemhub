@@ -5,7 +5,7 @@ require 'rake/gempackagetask'
 require 'spec/rake/spectask'
  
 GEM = "gemhub"
-GEM_VERSION = "0.1.0"
+GEM_VERSION = "0.3.0"
 SUMMARY = "Simple gem creation"
 AUTHOR = "Diego Carrion"
 EMAIL = "dc.rec1@gmail.com"
