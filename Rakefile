@@ -5,11 +5,11 @@ require 'rake/gempackagetask'
 require 'spec/rake/spectask'
  
 GEM = "gemhub"
-GEM_VERSION = "0.3.0"
+GEM_VERSION = "0.4.0"
 SUMMARY = "Simple gem creation"
 AUTHOR = "Diego Carrion"
 EMAIL = "dc.rec1@gmail.com"
-HOMEPAGE = "http://www.mouseoverstudio.com/blog/"
+HOMEPAGE = "http://www.diegocarrion.com"
  
 spec = Gem::Specification.new do |s|
   s.name = GEM
@@ -19,6 +19,8 @@ spec = Gem::Specification.new do |s|
   s.require_paths = ['app_generators', 'bin', 'lib']
   s.files = FileList['app_generators/**/*', 'bin/*', 'lib/**/*.rb', '[A-Z]*'].to_a
   s.executables = ["gemhub"]
+  
+  s.add_dependency(%q<rubigen>, [">= 1.3.4"])
   
   s.author = AUTHOR
   s.email = EMAIL
