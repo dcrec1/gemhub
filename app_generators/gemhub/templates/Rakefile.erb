@@ -5,7 +5,7 @@ require 'rake/gempackagetask'
 require 'spec/rake/spectask'
  
 GEM = "<%= name %>"
-GEM_VERSION = "0.2.0"
+GEM_VERSION = "0.1.0"
 SUMMARY = "FIXME Summary"
 AUTHOR = "FIXME Author"
 EMAIL = "FIXME Email"
@@ -18,13 +18,11 @@ spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = SUMMARY
   s.require_paths = ['lib']
-  s.files = FileList['lib/**/*.rb' '[A-Z]*'].to_a
+  s.files = FileList['app_generators/**/*', 'bin/*', 'lib/**/*.rb', '[A-Z]*'].to_a
   
   s.author = AUTHOR
   s.email = EMAIL
   s.homepage = HOMEPAGE
-
-  s.rubyforge_project = GEM # GitHub bug, gem isn't being build when this miss
 end
 
 Spec::Rake::SpecTask.new do |t|
