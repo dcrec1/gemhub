@@ -2,7 +2,7 @@ require 'rake'
 require 'rake/gempackagetask'
  
 GEM = "gemhub"
-GEM_VERSION = "0.5.0"
+GEM_VERSION = "0.5.1"
 SUMMARY = "Simple gem creation"
 DESCRIPTION = "Create your gems in a spartan way!"
 AUTHOR = "Diego Carrion"
