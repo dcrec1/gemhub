@@ -7,8 +7,10 @@ h2. USAGE
 Create your gem's project structure with:
 
 @gemhub <gem-name>@
+For more options, execute: @gemhub -h@
 
 Then edit Rakefile:
+
 <pre>
 GEM_VERSION = "0.1.0"
 SUMMARY = "FIXME Summary"
@@ -16,6 +18,7 @@ DESCRIPTION = "FIXME Description"
 AUTHOR = "FIXME Author"
 EMAIL = "FIXME Email"
 HOMEPAGE = "FIXME HomePage"
+[...]
 </pre>
 
 And finally execute:
@@ -23,7 +26,7 @@ And finally execute:
 
 To create the gemspec file.
 
-Use:
+In project folder, use:
 @rake -T@ to see all available tasks.
 
 h2. LICENSE:
