@@ -53,3 +53,8 @@ rescue LoadError => ex
   end
 end
 
+<% if aditional_tasks %>
+Dir["tasks/*.rake"].each do |rake_file|
+  load rake_file
+end
+<% end %>
