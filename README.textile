@@ -1,39 +1,44 @@
 h2. INSTALLATION
 
-@gem install gemhub@
+<pre><code>gem install gemhub</code></pre>
 
 h2. USAGE
 
 Create your gem's project structure with:
 
-@gemhub <gem-name>@
-For more options, execute: @gemhub -h@
+<pre><code>gemhub <gem-name></code></pre>
 
-Then edit Rakefile:
+For more options, execute: 
 
-<pre>
-GEM_VERSION = "0.1.0"
+<pre><code>gemhub -h</code></pre>
+
+Then edit the Rakefile file:
+
+<pre><code>GEM_VERSION = "0.1.0"
 SUMMARY = "FIXME Summary"
 DESCRIPTION = "FIXME Description"
 AUTHOR = "FIXME Author"
 EMAIL = "FIXME Email"
 HOMEPAGE = "FIXME HomePage"
-[...]
-</pre>
+[...]</code></pre>
 
 And finally execute:
-@rake make_spec@
 
-To create the gemspec file.
+<pre><code>rake make_spec</code></pre>
 
-In project folder, use:
-@rake -T@ to see all available tasks.
+to create the gemspec file.
+
+In the project's folder execute:
+
+<pre><code>rake -T</code></pre> 
+
+to see all available tasks.
 
 h2. LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2008 FIX
+Copyright (c) 2010
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
