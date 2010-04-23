@@ -9,14 +9,14 @@ Create your gem's project structure with:
 @gemhub <gem-name>@
 
 Then edit Rakefile:
-@
+<pre>
 GEM_VERSION = "0.1.0"
 SUMMARY = "FIXME Summary"
 DESCRIPTION = "FIXME Description"
 AUTHOR = "FIXME Author"
 EMAIL = "FIXME Email"
 HOMEPAGE = "FIXME HomePage"
-@
+</pre>
 
 And finally execute:
 @rake make_spec@
