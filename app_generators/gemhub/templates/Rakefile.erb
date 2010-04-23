@@ -3,10 +3,11 @@ require 'rubygems/specification'
 require 'rake'
 require 'rake/gempackagetask'
 require 'spec/rake/spectask'
- 
+
 GEM = "<%= name %>"
 GEM_VERSION = "0.1.0"
 SUMMARY = "FIXME Summary"
+DESCRIPTION = "FIXME Description"
 AUTHOR = "FIXME Author"
 EMAIL = "FIXME Email"
 HOMEPAGE = "FIXME HomePage"
@@ -17,6 +18,7 @@ spec = Gem::Specification.new do |s|
   s.version = GEM_VERSION
   s.platform = Gem::Platform::RUBY
   s.summary = SUMMARY
+  s.description = DESCRIPTION
   s.require_paths = ['lib']
   s.files = FileList['app_generators/**/*', 'bin/*', 'lib/**/*.rb', '[A-Z]*'].to_a
   
