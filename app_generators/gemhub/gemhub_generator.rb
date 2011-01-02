@@ -45,6 +45,7 @@ class GemhubGenerator < RubiGen::Base
       m.template "gemspec.erb", "#{name}.gemspec"
 
       system "git init"
+      m.file "gitignore", ".gitignore"
     end
   end
 
