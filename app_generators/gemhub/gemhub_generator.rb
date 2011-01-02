@@ -39,7 +39,7 @@ class GemhubGenerator < RubiGen::Base
 
       m.file "README.textile", "README.textile"
       m.file "Gemfile", "Gemfile"
-      m.template "Rakefile.erb", "Rakefile"
+      m.file "Rakefile", "Rakefile"
     end
   end
 
