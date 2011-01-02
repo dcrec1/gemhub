@@ -37,6 +37,8 @@ class GemhubGenerator < RubiGen::Base
         m.template "tasks/cucumber.rake.erb", "tasks/cucumber.rake", :assigns => {:aditional_tasks => @aditional_tasks}
       end
 
+      m.directory "lib/#{name}"
+      m.template "lib/version.rb.erb", "lib/#{name}/version.rb"
       m.file "README.textile", "README.textile"
       m.file "Gemfile", "Gemfile"
       m.file "Rakefile", "Rakefile"
