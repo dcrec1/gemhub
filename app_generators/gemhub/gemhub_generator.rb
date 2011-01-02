@@ -40,6 +40,7 @@ class GemhubGenerator < RubiGen::Base
       m.file "README.textile", "README.textile"
       m.file "Gemfile", "Gemfile"
       m.file "Rakefile", "Rakefile"
+      m.template "gemspec", "#{name}.gemspec"
     end
   end
 
