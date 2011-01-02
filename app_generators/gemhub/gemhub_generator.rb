@@ -43,6 +43,8 @@ class GemhubGenerator < RubiGen::Base
       m.file "Gemfile", "Gemfile"
       m.file "Rakefile", "Rakefile"
       m.template "gemspec.erb", "#{name}.gemspec"
+
+      system "git init"
     end
   end
 
